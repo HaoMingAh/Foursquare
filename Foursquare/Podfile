@@ -22,5 +22,6 @@ pod 'SVProgressHUD'
 pod 'SDWebImage'
 pod 'IQKeyboardManagerSwift'
 pod 'SwiftyJSON'
+pod 'IDMPhotoBrowser'
 
 end

@@ -20,13 +20,15 @@ struct Constants {
     static let SECONDARY_COLOR = 0xf6e0e0
     
     static let GRAY_COLOR = 0xaaaaaa
-    static let LIGHT_GRAY_COLOR = 0xcbcbcb
+    static let LIGHT_GRAY_COLOR = 0xEEF0F4
     static let TAB_GRAY_COLOR = 0xeeeeee
     
     
-    static let SEARCH_URL = "https://api.foursquare.com/v2/venues/search?client_id=0T21I4FD3IBP1NWEE2QQG0GO3GTXYFRCYBOVTKNZ4VJIPBD5&client_secret=HCMXPWZXEAUWZKKLV1ZNCL2W1UAOXHNBYA0YMABP40RU1V23&v=20171219&ll="
+    static let SEARCH_URL = "https://api.foursquare.com/v2/venues/search?client_id=\(CLIENTID)&client_secret=\(SECRET)&v=20171219&ll="
+    static let SUGGESTION_URL = "https://api.foursquare.com/v2/venues/suggestcompletion?client_id=\(CLIENTID)&client_secret=\(SECRET)&v=20171219&ll="
+    static let DETAIL_URL = "https://api.foursquare.com/v2/venues/"
     
-   
+
 }
 
 

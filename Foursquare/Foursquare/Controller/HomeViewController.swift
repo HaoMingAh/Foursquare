@@ -60,7 +60,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if let term = ui_searchbar.text {
             
-            if term.count > 0 {
+            if !term.isEmpty {
                 URL += "&query=\(term)"
             }
         }
@@ -135,7 +135,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let venue = _results[indexPath.row]
         
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        vc._venue = venue
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
